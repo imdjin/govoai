@@ -1,12 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import PainPoints from "@/components/PainPoints";
+import CoreCapabilities from "@/components/CoreCapabilities";
+import ComparisonTable from "@/components/ComparisonTable";
+import ScenariosSection from "@/components/ScenariosSection";
+import CoreValues from "@/components/CoreValues";
+import CasesSection from "@/components/CasesSection";
+import PricingSection from "@/components/PricingSection";
+import ImplementationSection from "@/components/ImplementationSection";
+import SecuritySection from "@/components/SecuritySection";
+import FooterSection from "@/components/FooterSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <HeroSection />
+      <PainPoints />
+      <CoreCapabilities />
+      <ComparisonTable />
+      <ScenariosSection />
+      <div id="values">
+        <CoreValues />
       </div>
+      <div id="cases">
+        <CasesSection />
+      </div>
+      <PricingSection />
+      <ImplementationSection />
+      <div id="security">
+        <SecuritySection />
+      </div>
+      <FooterSection />
     </div>
   );
 };
