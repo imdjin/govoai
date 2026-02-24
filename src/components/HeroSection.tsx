@@ -29,7 +29,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="animate-fade-up-delay-2 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mb-10 leading-relaxed">
-            把政策解读、办事导办和高频问答批量生成短视频，省时、省力、省费用
+            把政策解读、办事指南和高频问答批量生成短视频，省时、省力、省费用
           </p>
 
           {/* CTA */}
