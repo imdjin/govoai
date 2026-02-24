@@ -32,7 +32,7 @@ const QrModal = ({ open, onClose }: QrModalProps) => {
         </button>
 
         <img src={wechatQr} alt="微信二维码" className="w-44 h-44 object-contain" />
-        <p className="text-sm text-gray-600 mt-4 text-center">添加微信请备注"秒懂政务"，感谢您的配合～</p>
+        <p className="text-sm text-gray-600 mt-4 text-center">请微信扫描联系我们。<br />添加时请备注"秒懂政务"，感谢您的配合～</p>
       </div>
     </div>
   );
