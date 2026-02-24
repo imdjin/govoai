@@ -35,7 +35,7 @@ const HeroSection = () => {
           {/* CTA */}
           <div className="animate-fade-up-delay-3 flex flex-wrap gap-4 mb-16">
             <a href="#pricing" className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-lg font-semibold text-accent-foreground transition-all duration-300 hover:scale-105" style={{ background: 'var(--gradient-accent)' }}>
-              立即咨询
+              立即试用
               <ArrowRight className="w-5 h-5" />
             </a>
             <a href="#capabilities" className="inline-flex items-center gap-2 rounded-lg border border-primary-foreground/20 bg-primary-foreground/5 px-8 py-4 text-lg font-semibold text-primary-foreground backdrop-blur-sm transition-all duration-300 hover:bg-primary-foreground/10">
