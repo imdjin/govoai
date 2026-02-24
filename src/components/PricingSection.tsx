@@ -48,6 +48,23 @@ const plans = [
     ],
     popular: false,
   },
+  {
+    name: "私有部署版",
+    price: "面议",
+    unit: "",
+    annual: "",
+    target: "市级及以上 / 高安全需求单位",
+    desc: "独立部署，数据不出域，完全自主可控",
+    features: [
+      "无限量视频",
+      "不限用户账号",
+      "本地化私有部署",
+      "数据完全自主可控",
+      "专属技术支持与培训",
+      "定制化模板与功能开发",
+    ],
+    popular: false,
+  },
 ];
 
 const PricingSection = () => {
@@ -61,7 +78,7 @@ const PricingSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.name}
@@ -103,7 +120,7 @@ const PricingSection = () => {
                 }`}
                 style={plan.popular ? { background: 'var(--gradient-card)' } : undefined}
               >
-                立即咨询
+                {plan.price === "面议" ? "联系我们" : "立即购买"}
               </a>
             </div>
           ))}
