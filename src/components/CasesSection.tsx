@@ -14,7 +14,7 @@ const cases = [
   },
   {
     label: "对标落地项目",
-    title: "山东滨州高新区行政审批服务局",
+    title: "山东某州高新区行政审批服务局",
     content: "「开办企业一件事」等核心营商环境事项短视频批量制作",
     timeline: "",
     stats: [
