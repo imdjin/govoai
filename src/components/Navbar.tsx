@@ -50,8 +50,9 @@ const Navbar = () => {
               联系我们
             </button>
             {showQr && (
-              <div className="absolute right-0 top-full mt-3 z-[100] bg-white rounded-xl shadow-2xl flex items-center justify-center" style={{ width: 200, height: 200 }}>
-                <img src={wechatQr} alt="微信二维码" className="w-40 h-40 object-contain" />
+              <div className="absolute right-0 top-full mt-3 z-[100] bg-white rounded-xl shadow-2xl flex flex-col items-center justify-evenly py-4" style={{ width: 200, height: 240 }}>
+                <img src={wechatQr} alt="微信二维码" className="w-36 h-36 object-contain" />
+                <p className="text-xs text-gray-600 text-center">加微信请备注："秒懂政务"</p>
               </div>
             )}
           </div>
