@@ -47,7 +47,7 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="animate-fade-up-delay-3 grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { value: "10分钟", label: "单条视频生产" },
+              { value: "1分钟", label: "单条视频生产" },
               { value: "1/10", label: "成本降至传统模式" },
               { value: "30倍", label: "制作效率提升" },
               { value: "100%", label: "内容合规保障" },
