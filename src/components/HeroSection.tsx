@@ -29,7 +29,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="animate-fade-up-delay-2 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mb-10 leading-relaxed">
-            政务办事短视频AI批量生产与全场景落地平台，彻底解决政务办事视频"制作慢、成本高、难批量、不实用、更新难、无数据"六大核心痛点
+            把政策解读、办事导办和高频问答一键生成短视频，省时、省力、省费用
           </p>
 
           {/* CTA */}
