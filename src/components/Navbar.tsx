@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const links = [
   { label: "核心能力", href: "#capabilities" },
@@ -15,7 +16,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-gov-dark/80 backdrop-blur-md border-b border-primary-foreground/5">
       <div className="section-container flex items-center justify-between h-16">
-        <a href="#" className="text-xl font-black text-primary-foreground tracking-wide">
+        <a href="#" className="flex items-center gap-2 text-xl font-black text-primary-foreground tracking-wide">
+          <img src={logo} alt="秒懂政务" className="h-8 w-8 object-contain" />
           秒懂政务
         </a>
 
