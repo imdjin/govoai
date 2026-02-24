@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import logo from "@/assets/logo.png";
 import QrModal from "./QrModal";
 
@@ -32,9 +32,11 @@ const Navbar = () => {
           ))}
           <button
             onClick={() => setShowQr(true)}
-            className="text-sm font-semibold px-5 py-2 rounded-lg bg-muted text-foreground hover:bg-muted/80 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-lg font-semibold text-accent-foreground transition-all duration-300 hover:scale-105 cursor-pointer"
+            style={{ background: 'var(--gradient-accent)' }}
           >
             联系我们
+            <ArrowRight className="w-5 h-5" />
           </button>
         </div>
 
