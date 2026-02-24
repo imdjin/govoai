@@ -34,7 +34,7 @@ const PainPoints = () => {
         <div className="text-center mb-16">
           <h2 className="section-title">当前政务服务的核心痛点</h2>
           <p className="section-subtitle">
-            传统办事指引模式已无法满足考核要求与群众需求，四大痛点精准戳中政务部门当前面临的切身难题
+            传统办事指引模式已无法满足群众需求与考核要求，政务工作当前面临四大切身难题
           </p>
         </div>
 
