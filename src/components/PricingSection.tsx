@@ -18,7 +18,7 @@ const plans = [
   },
   {
     name: "专业版",
-    price: "3999",
+    price: "4999",
     unit: "元/年",
     annual: "",
     target: "街道/乡镇便民服务中心",
