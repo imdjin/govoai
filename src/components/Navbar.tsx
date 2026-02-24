@@ -30,6 +30,13 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
+          <button
+            onClick={() => setShowQr(true)}
+            className="text-sm font-semibold text-accent-foreground px-5 py-2 rounded-lg transition-all hover:opacity-90 cursor-pointer"
+            style={{ background: 'var(--gradient-accent)' }}
+          >
+            联系我们
+          </button>
         </div>
 
         {/* Mobile toggle */}
