@@ -50,7 +50,7 @@ const plans = [
   },
   {
     name: "私有部署版",
-    price: "面议",
+    price: "\u00A0",
     unit: "",
     annual: "",
     target: "市级及以上 / 高安全需求单位",
@@ -120,7 +120,7 @@ const PricingSection = () => {
                 }`}
                 style={plan.popular ? { background: 'var(--gradient-card)' } : undefined}
               >
-                {plan.price === "面议" ? "联系我们" : "立即购买"}
+                {plan.price.trim() === "" ? "联系我们" : "立即购买"}
               </a>
             </div>
           ))}
