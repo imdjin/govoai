@@ -26,9 +26,6 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a href="#pricing" className="text-sm font-semibold text-accent-foreground px-5 py-2 rounded-lg transition-all hover:opacity-90" style={{ background: 'var(--gradient-accent)' }}>
-            立即咨询
-          </a>
         </div>
 
         {/* Mobile toggle */}
