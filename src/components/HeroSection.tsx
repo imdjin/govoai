@@ -23,7 +23,7 @@ const HeroSection = () => {
           <h1 className="animate-fade-up-delay-1 text-5xl md:text-7xl font-black text-primary-foreground leading-tight mb-6">
             秒懂政务
             <span className="block text-3xl md:text-5xl font-bold mt-2 gov-gradient-text">
-              1分钟生成政务宣传视频
+              1分钟，把政务内容变成群众看得懂的短视频。
             </span>
           </h1>
 
