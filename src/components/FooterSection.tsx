@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import QrModal from "./QrModal";
 
 const FooterSection = () => {
+  const [showQr, setShowQr] = useState(false);
   return (
     <>
       {/* CTA */}
@@ -11,10 +14,11 @@ const FooterSection = () => {
             <p className="text-primary-foreground/70 max-w-xl mx-auto mb-8">
               联系我们，注册即用，快速提升政务服务考核指标
             </p>
-            <a href="mailto:contact@miaodong.gov" className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-lg font-semibold text-accent-foreground transition-all hover:scale-105" style={{ background: 'var(--gradient-accent)' }}>
+            <button onClick={() => setShowQr(true)} className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-lg font-semibold text-accent-foreground transition-all hover:scale-105 cursor-pointer" style={{ background: 'var(--gradient-accent)' }}>
               预约演示
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </button>
+            <QrModal open={showQr} onClose={() => setShowQr(false)} />
           </div>
         </div>
       </section>

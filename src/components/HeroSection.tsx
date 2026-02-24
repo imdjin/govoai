@@ -1,7 +1,10 @@
+import { useState } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { Play, ArrowRight, Shield, Zap, BarChart3 } from "lucide-react";
+import QrModal from "./QrModal";
 
 const HeroSection = () => {
+  const [showQr, setShowQr] = useState(false);
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
@@ -34,10 +37,10 @@ const HeroSection = () => {
 
           {/* CTA */}
           <div className="animate-fade-up-delay-3 flex flex-wrap gap-4 mb-16">
-            <a href="#pricing" className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-lg font-semibold text-accent-foreground transition-all duration-300 hover:scale-105" style={{ background: 'var(--gradient-accent)' }}>
+            <button onClick={() => setShowQr(true)} className="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-lg font-semibold text-accent-foreground transition-all duration-300 hover:scale-105 cursor-pointer" style={{ background: 'var(--gradient-accent)' }}>
               立即试用
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </button>
             <a href="#capabilities" className="inline-flex items-center gap-2 rounded-lg border border-primary-foreground/20 bg-primary-foreground/5 px-8 py-4 text-lg font-semibold text-primary-foreground backdrop-blur-sm transition-all duration-300 hover:bg-primary-foreground/10">
               <Play className="w-5 h-5" />
               了解产品
@@ -63,6 +66,7 @@ const HeroSection = () => {
 
       {/* Bottom gradient */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
+      <QrModal open={showQr} onClose={() => setShowQr(false)} />
     </section>
   );
 };

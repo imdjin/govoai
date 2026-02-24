@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Check } from "lucide-react";
+import QrModal from "./QrModal";
 
 const plans = [
   {
@@ -68,6 +70,7 @@ const plans = [
 ];
 
 const PricingSection = () => {
+  const [showQr, setShowQr] = useState(false);
   return (
     <section id="pricing" className="section-padding">
       <div className="section-container">
@@ -111,9 +114,9 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <a
-                href="#contact"
-                className={`block text-center rounded-lg py-3 font-semibold transition-all duration-300 ${
+              <button
+                onClick={() => setShowQr(true)}
+                className={`block w-full text-center rounded-lg py-3 font-semibold transition-all duration-300 cursor-pointer ${
                   plan.popular
                     ? "text-primary-foreground hover:opacity-90"
                     : "bg-muted text-foreground hover:bg-muted/80"
@@ -121,11 +124,12 @@ const PricingSection = () => {
                 style={plan.popular ? { background: 'var(--gradient-card)' } : undefined}
               >
                 {plan.price.trim() === "" ? "联系我们" : "立即购买"}
-              </a>
+              </button>
             </div>
           ))}
         </div>
       </div>
+      <QrModal open={showQr} onClose={() => setShowQr(false)} />
     </section>
   );
 };

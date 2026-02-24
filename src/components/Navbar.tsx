@@ -1,7 +1,7 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
-import wechatQr from "@/assets/wechat-qr.png";
+import QrModal from "./QrModal";
 
 const links = [
   { label: "核心能力", href: "#capabilities" },
@@ -14,17 +14,6 @@ const links = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [showQr, setShowQr] = useState(false);
-  const qrRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (qrRef.current && !qrRef.current.contains(e.target as Node)) {
-        setShowQr(false);
-      }
-    };
-    if (showQr) document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [showQr]);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-gov-dark/80 backdrop-blur-md border-b border-primary-foreground/5">
@@ -41,21 +30,13 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <div className="relative" ref={qrRef}>
-            <button
-              onClick={() => setShowQr(!showQr)}
-              className="text-sm font-semibold text-accent-foreground px-5 py-2 rounded-lg transition-all hover:opacity-90 cursor-pointer"
-              style={{ background: 'var(--gradient-accent)' }}
-            >
-              联系我们
-            </button>
-            {showQr && (
-              <div className="absolute right-0 top-full mt-3 z-[100] bg-white rounded-xl shadow-2xl flex flex-col items-center justify-evenly py-4" style={{ width: 200, height: 240 }}>
-                <img src={wechatQr} alt="微信二维码" className="w-36 h-36 object-contain" />
-                <p className="text-xs text-gray-600 text-center">加微信请备注："秒懂政务"</p>
-              </div>
-            )}
-          </div>
+          <button
+            onClick={() => setShowQr(true)}
+            className="text-sm font-semibold text-accent-foreground px-5 py-2 rounded-lg transition-all hover:opacity-90 cursor-pointer"
+            style={{ background: 'var(--gradient-accent)' }}
+          >
+            联系我们
+          </button>
         </div>
 
         {/* Mobile toggle */}
@@ -86,6 +67,7 @@ const Navbar = () => {
           </button>
         </div>
       )}
+      <QrModal open={showQr} onClose={() => setShowQr(false)} />
     </nav>
   );
 };
