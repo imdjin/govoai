@@ -2,16 +2,16 @@ import { AlertTriangle, FileX, Target, ShieldAlert } from "lucide-react";
 
 const painPoints = [
   {
-    icon: AlertTriangle,
-    title: "制作端困境",
-    subtitle: "成本高、周期长、难批量",
-    desc: "单条视频制作周期3-5天，成本5000-20000元，覆盖200+高频事项需百万级投入、近2年周期，无法规模化推广",
-  },
-  {
     icon: FileX,
     title: "内容端困境",
     subtitle: "不实用、看不懂、更新慢",
     desc: "传统图文指南晦涩难懂，政策调整后内容更新不及时，极易误导群众引发投诉",
+  },
+  {
+    icon: AlertTriangle,
+    title: "制作端困境",
+    subtitle: "成本高、周期长、难批量",
+    desc: "单条视频制作周期3-5天，成本5000-20000元，覆盖200+高频事项需百万级投入、近2年周期，无法规模化推广",
   },
   {
     icon: Target,
