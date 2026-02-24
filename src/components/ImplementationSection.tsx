@@ -1,24 +1,24 @@
 const steps = [
   {
     phase: "第一阶段",
-    title: "需求对接",
-    period: "3个工作日",
-    work: "对接核心需求，梳理高频办事事项清单，确认落地场景",
-    result: "事项清单、落地实施方案",
+    title: "注册开通",
+    period: "即时",
+    work: "在线注册账号，选择适合的版本，即刻开通使用",
+    result: "平台账号、操作指引",
   },
   {
     phase: "第二阶段",
-    title: "批量生成",
-    period: "5-10个工作日",
-    work: "完成全量事项视频批量生成、合规校验，提交政务方终审",
-    result: "全事项视频成品、上线配套物料",
+    title: "事项梳理",
+    period: "1-2天",
+    work: "梳理高频办事事项清单，确认视频制作优先级",
+    result: "事项清单、制作计划",
   },
   {
     phase: "第三阶段",
-    title: "上线落地",
-    period: "2个工作日",
-    work: "完成窗口二维码制作、政务网嵌入、人员操作培训",
-    result: "全场景上线落地、操作培训手册",
+    title: "批量生成",
+    period: "1-3天",
+    work: "在线批量生成全量事项视频，AI合规校验，提交终审",
+    result: "全事项视频成品、配套物料",
   },
   {
     phase: "第四阶段",
@@ -34,9 +34,9 @@ const ImplementationSection = () => {
     <section className="section-padding" style={{ background: 'var(--gradient-section)' }}>
       <div className="section-container">
         <div className="text-center mb-16">
-          <h2 className="section-title">落地实施路径</h2>
+          <h2 className="section-title">快速上手路径</h2>
           <p className="section-subtitle">
-            标准化落地实施路径，最快2周上线见效，全流程透明可控
+            注册即用，最快1天批量产出视频，全流程在线完成
           </p>
         </div>
 
@@ -63,7 +63,7 @@ const ImplementationSection = () => {
 
         <div className="mt-8 rounded-xl p-5 text-center text-primary-foreground" style={{ background: 'var(--gradient-card)' }}>
           <p className="font-semibold">
-            最快<span className="text-gov-cyan font-black text-xl mx-1">10个工作日</span>即可完成从需求对接到全量上线，第15天即可产出首份成效数据报告
+            注册即用，最快<span className="text-gov-cyan font-black text-xl mx-1">1天</span>即可批量产出视频，无需部署、无需等待
           </p>
         </div>
       </div>
