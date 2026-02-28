@@ -25,10 +25,13 @@ const FooterSection = () => {
 
       {/* Footer */}
       <footer className="border-t border-border py-8">
-        <div className="section-container flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p className="font-semibold text-foreground">秒懂政务</p>
-          <p>AI赋能高效办成一件事 · 全场景提升政务服务质效</p>
-          <p>© 2025 秒懂政务 版权所有 · <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">蜀ICP备2024070746号</a></p>
+        <div className="section-container flex flex-col items-center gap-4 text-sm text-muted-foreground">
+          <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
+            <p className="font-semibold text-foreground">秒懂政务</p>
+            <p>AI赋能高效办成一件事 · 全场景提升政务服务质效</p>
+            <p>© 2025 秒懂政务 版权所有</p>
+          </div>
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">蜀ICP备2024070746号</a>
         </div>
       </footer>
     </>
